@@ -16,8 +16,8 @@
     </header>
     <form action="" method="get" class="main">
         <div class="book-row">
-            <label for="book_name">Book Name:</label>
-            <input type="text" id="book_name" name="book_name">
+            <label for="book">Book Name:</label>
+            <input type="text" id="book" name="book_name">
         </div>
         <div class="author-row">
             <label for="author">Author:</label>
@@ -34,7 +34,7 @@
             <input type="radio" id="not-read" name="not-read">
             <label for="not-read" class="radio-label">No</label>
         </fieldset>
-        <div class="submit">
+        <div class="submit" onclick="addBookToLibrary(event)">
             <button>Submit</button>
         </div>
     </form>
