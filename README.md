@@ -1,1 +1,1 @@
-# Library
+# Create a library project to work with objects and forms. Form will take a book name, author, number of pages, and a checkbox on whether or not the book has been read. 

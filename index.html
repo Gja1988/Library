@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+
+</head>
+
+<body>
+    <header class="library-form-header">
+        <h1>Library Submission</h1>
+        <p><em>Lets create a library of books you've read and want to read.</em></p>
+    </header>
+    <form action="" method="get" class="main">
+        <div class="book-row">
+            <label for="book_name">Book Name:</label>
+            <input type="text" id="book_name" name="book_name">
+        </div>
+        <div class="author-row">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+        </div>
+        <div class="pages-row">
+            <label for="pages"># of pages:</label>
+            <input type="number" id="pages" name="pages" min="1">
+        </div>
+        <fieldset class="radio-row">
+            <legend>Have you read this book before?</legend>
+            <input type="radio" id="read" name="read">
+            <label for="read" class="radio-label">Yes</label>
+            <input type="radio" id="not-read" name="not-read">
+            <label for="not-read" class="radio-label">No</label>
+        </fieldset>
+        <div class="submit">
+            <button>Submit</button>
+        </div>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
