@@ -14,6 +14,8 @@
         <h1>Library Submission</h1>
         <p><em>Lets create a library of books you've read and want to read.</em></p>
     </header>
+    <button id="addBook" onclick="openForm()">Add book</button>
+    <div class="card" id="bookCard"></div>
     <form action="" method="get" class="main">
         <div class="book-row">
             <label for="book">Book Name:</label>
@@ -29,9 +31,9 @@
         </div>
         <fieldset class="radio-row">
             <legend>Have you read this book before?</legend>
-            <input type="radio" id="read" name="read">
+            <input type="radio" id="read" name="read-status">
             <label for="read" class="radio-label">Yes</label>
-            <input type="radio" id="not-read" name="not-read">
+            <input type="radio" id="not-read" name="read-status">
             <label for="not-read" class="radio-label">No</label>
         </fieldset>
         <div class="submit" onclick="addBookToLibrary(event)">
@@ -39,7 +41,8 @@
         </div>
     </form>
 
-    <script src="app.js"></script>
+    <script src=" app.js">
+    </script>
 </body>
 
 </html>

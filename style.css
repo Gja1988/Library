@@ -20,6 +20,7 @@ body {
     width: 80%;
     padding: 50px;
     margin: 0 0 40px 0;
+    display: none;
 }
 
 .library-form-header {
@@ -111,6 +112,25 @@ body {
     background-color: #407fc7;
 }
 
+#addBook {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #5995DA;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+#addBook:hover {
+    background-color: #76aeed;
+}
+
+#addBook:active {
+    background-color: #407fc7;
+}
+
 @media only screen and (min-width: 700px) {
 
     .library-form-header,
@@ -158,6 +178,10 @@ body {
     }
 
     .submit button {
+        margin-left: 120px;
+    }
+
+    #addBook button {
         margin-left: 120px;
     }
 }
