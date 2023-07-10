@@ -1,21 +1,21 @@
 let myLibrary = [];
 
-
 function Book(title, author, pages) {
     this.title = title;
     this.author = author;
     this.pages = pages;
-};
+}
 
 function addBookToLibrary(event) {
-
     event.preventDefault();
 
     const book = document.querySelector('#book').value;
     const author = document.querySelector('#author').value;
     const pages = document.querySelector('#pages').value;
+    const readStatus = document.querySelector('input[name="read-status"]:checked').value;
 
     const newBook = new Book(book, author, pages);
+    newBook.readStatus = readStatus;
 
     myLibrary.push(newBook);
 
@@ -27,7 +27,8 @@ function addBookToLibrary(event) {
     bookCard.innerHTML = `
     <h2>${newBook.title}</h2>
     <p>Author: ${newBook.author}</p>
-    <p>Pages: ${newBook.pages}</p>`;
+    <p>Pages: ${newBook.pages}</p>
+    <p>Read Status: ${newBook.readStatus === 'yes' ? 'Yes' : 'No'}</p>`;
 
     const bookCardContainer = document.querySelector('#bookCard');
     bookCardContainer.appendChild(bookCard);
@@ -41,8 +42,7 @@ function addBookToLibrary(event) {
 
     const button = document.querySelector('#addBook');
     button.style.display = 'block';
-
-};
+}
 
 const openForm = () => {
     const form = document.querySelector('.main');
@@ -52,9 +52,8 @@ const openForm = () => {
     button.style.display = 'none';
 }
 
-const bookCard = (book) => {
+const createBookCard = (book) => {
     addBookToLibrary();
-    card.appendChild()
 }
 
 
